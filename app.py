@@ -2,7 +2,7 @@ import streamlit as st
 import json
 from PIL import Image
 from code_util import execute_code
-from solar import solar_grade
+# from solar import solar_grade
 from gpt_util import gpt_grade
 from hw_parser import get_head_contents
 
@@ -34,8 +34,8 @@ elif page in hw_keys:
             elif test_output is not None:
                 st.success(f"Code execution successful: {test_output}")
                 st.info("⏳ Checking your code with AI-TA (SOLAR)...")
-                ta_comments = solar_grade(hw_desc, student_code, test_output, error)
-                st.markdown(ta_comments)
+                # ta_comments = solar_grade(hw_desc, student_code, test_output, error)
+                # st.markdown(ta_comments)
 
                 st.info("⏳ Checking your code with AI-TA (GPT)...")
                 ta_comments = gpt_grade(hw_desc, student_code, test_output, error)
