@@ -2,7 +2,7 @@ import openai
 import os
 
 # Set openai.api_key to the OPENAI environment variable
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_key = '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'
 SYSTEM_MSG = """You are a TA for a first year students. 
 You are nice and knowledgable. Provide detailed feedback to the student.
 """
