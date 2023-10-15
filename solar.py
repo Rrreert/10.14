@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=LOGLEVEL)
 
 TOGETHERAI_API_HOST = os.getenv("TOGETHERAI_API_HOST", "https://api.together.xyz")
-TOGETHERAI_API_KEY = os.environ["TOGETHERAI_API_KEY"]
+TOGETHERAI_API_KEY = '7988bf641132440a80e3a40424c8db6eaed5ced3e106bd6d3ebcd7fe7a3fef21'
 SOLAR_MAX_TOKEN = 1024
 SOLAR_MAX_CONTEXT = 2048
 SOLAR_TEMPERATURE = 0.7
