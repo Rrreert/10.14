@@ -13,7 +13,7 @@ page = st.sidebar.selectbox("Select a quiz:", hw_keys)
 
 # Home Display the student codes
 if page == "Home":
-    image = Image.open('qr.png')
+    image = Image.open('qr.jpg')
     st.title("AI-TA Page")
     st.write("Welcome to the AI-TA platform!")
     st.image(image, caption="QR Code for AI-TA platform!")
