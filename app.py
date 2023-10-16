@@ -27,6 +27,7 @@ elif page in hw_keys:
     student_code = st.text_area("Write Code:", height=300)
 
     if st.button("Consult AI-TA"):
+        st.write(page)
         if student_code:
             test_output, error = execute_code(student_code)
             if error:
