@@ -2,7 +2,7 @@ import streamlit as st
 import json
 from PIL import Image
 from code_util import execute_code
-# from solar import solar_grade
+from solar import solar_grade
 from gpt_util import gpt_grade
 from hw_parser import get_head_contents
 
